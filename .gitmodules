@@ -1,0 +1,6 @@
+[submodule "Playground/meta-example"]
+	path = Playground/meta-example
+	url = https://github.com/DynamicDevices/meta-example
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky.git
