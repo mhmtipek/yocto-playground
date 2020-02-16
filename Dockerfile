@@ -29,5 +29,5 @@ RUN echo "root:1234" | chpasswd
 ENV YOCTO_INSTALL_PATH "/opt/yocto"
 RUN install -o 1000 -g 1000 -d $YOCTO_INSTALL_PATH
 USER build
-WORKDIR "${YOCTO_INSTALL_PATH}/poky"
+WORKDIR "${YOCTO_INSTALL_PATH}"
 
