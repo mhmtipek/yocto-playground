@@ -1,5 +1,5 @@
 [submodule "Playground/meta-example"]
-	path = Playground/meta-example
+	path = layers/meta-example
 	url = git@github.com:mhmtipek/meta-example.git
 [submodule "poky"]
 	path = poky
