@@ -1,6 +1,3 @@
-[submodule "Playground/meta-example"]
-	path = layers/meta-example
-	url = git@github.com:mhmtipek/meta-example.git
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky.git
