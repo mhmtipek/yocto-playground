@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) --tag "yocto-playground" .
+chmod g+w build
+
+docker build --build-arg GID=$(id -g) --tag "yocto-playground" .

@@ -16,7 +16,7 @@ RUN locale-gen en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 \
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-ARG UID=1000
+ARG UID=1500
 ARG GID=1000
 
 # User management
