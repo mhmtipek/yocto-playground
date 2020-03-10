@@ -16,8 +16,11 @@ RUN locale-gen en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 \
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
+ARG UID=1000
+ARG GID=1000
+
 # User management
-RUN groupadd -g 1000 build && useradd -u 1000 -g 1000 -ms /bin/bash build && usermod -a -G sudo build && usermod -a -G users build
+RUN groupadd -g $GID build && useradd -u $UID -g $GID -ms /bin/bash build && usermod -a -G sudo build && usermod -a -G users build
 
 # Install repo
 RUN curl -o /usr/local/bin/repo https://storage.googleapis.com/git-repo-downloads/repo && chmod a+x /usr/local/bin/repo
@@ -27,7 +30,7 @@ RUN echo "root:1234" | chpasswd
 
 # Setup yocto install path
 ENV YOCTO_INSTALL_PATH "/opt/yocto"
-RUN install -o 1000 -g 1000 -d $YOCTO_INSTALL_PATH
+RUN install -o $UID -g $GID -d $YOCTO_INSTALL_PATH
 USER build
 WORKDIR "${YOCTO_INSTALL_PATH}"
 
