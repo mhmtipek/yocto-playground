@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y install gawk wget git-core \
     chrpath socat cpio python python3 python3-pip \
     python3-pexpect xz-utils debianutils iputils-ping \
     libsdl1.2-dev xterm tar locales curl vim tree \
-    autoconf libtool rpm
+    autoconf libtool rpm tmux
 
 # dash does not support source command. Replace it with bash
 RUN rm /bin/sh && ln -s bash /bin/sh
