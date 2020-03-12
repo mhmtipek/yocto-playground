@@ -12,8 +12,7 @@ Runs Docker container
 Opens a new terminal for currently running container
 
 ## Step by step
-1. Don't forget to initialize submodules
-   git submodule update --init
+1. Don't forget to initialize submodules 'git submodule update --init'
 2. Run './build.sh'
 3. Run './run.sh'
 4. In this step, you should be inside docker. Run 'source poky/oe-init-build-env'
