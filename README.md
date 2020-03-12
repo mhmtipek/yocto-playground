@@ -19,3 +19,5 @@ Opens a new terminal for currently running container
 5. You should be inside build directory. Run 'bitbake core-image-minimal' This step will take long time because bitbake will create an image.
 6. Run 'runqemu core-image-minimal nographic slirp'
 
+## Todo
+1. Describe how to add layers
